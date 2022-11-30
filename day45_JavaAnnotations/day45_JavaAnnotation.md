@@ -3,6 +3,7 @@ Java annotation can be used to define the meta data of a Java class or class ele
 Java annotation at the compile time to instruct the compiler about the build process. Annotation is also used at runtime to get insight about the properties of class elements.
 Java annotation can be added to an element in the following way:
 @Entity
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Class DemoClass{
 }
 We can also set a value to the annotation member. For example:
@@ -15,6 +16,7 @@ In Java, there are several built-in annotations. You can also define your own an
 @interface FamilyBudget {
    String userRole() default "GUEST";
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Here, we define an annotation FamilyBudget, where userRole is the only member in that custom annotation. 
 The userRole takes only String type values, and the default is "GUEST". If we do not define the value for 
 this annotation member, then it takes the default. By using @Target, we can specify where our annotation can be used. 
@@ -72,6 +74,7 @@ public class Solution {
         }
     }
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Here, we partially define an annotation, FamilyBudget and a class, FamilyMember. In this problem, 
 we give the user role and the amount of money that a user spends as inputs. Based on the user role, 
 you have to call the appropriate method in the FamilyMember class. If the amount of money spent is 
@@ -84,6 +87,7 @@ Input Format
 The first line of input contains an integer N representing the total number of test cases. 
 Each test case contains a string and an integer separated by a space on a single line in the following format:
 UserRole MoneySpend
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Constraints
 2≤N≤10 
 0≤MoneySpend≤200 
